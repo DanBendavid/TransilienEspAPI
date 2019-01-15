@@ -83,7 +83,7 @@ String TransilienEspApi::SendGetToTransilienEsp(String command) {
 		
 		client->println("GET " + command + " HTTP/1.1");
 		client->println("Host: " TransilienESP_HOST);
-		client->println("Authorization: Basic dG5odG45MTc6NTNZNHZyaFE="); // Base 64 Encode from your "user:password" - > dG5odG45MTc6NTNZNHZyaFE=
+		client->println("Authorization: Basic XXXXXXXXXXXXXXXX"); // Base 64 Encode from your "user:password" - > XXXXXXXXXXXXXXXX
 		client->println(F("User-Agent: arduino/1.0.0"));
 		client->println();
 		now=millis();
